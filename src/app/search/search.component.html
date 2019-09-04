@@ -1,0 +1,124 @@
+<div class="container app-cont mt-3">
+    <div class="row" style="background:#fff">
+        <div class="col-xs6 col-md-6 col-lg-6 pr-0">
+            <div class="badge badge-secondary col col-12 content">         
+            <h4 class="text-left name-hotel mb-4">BITZ Hotel</h4>
+          <div class="input-group" style="padding:3px;margin-top: 20%;">
+                <div class="row mb-3">
+                        <div class="col-md-4 pr-0 pl-3">
+                         <div class="input-group">                    
+                             <mat-form-field>
+                                <input matInput [matDatepicker]="picker"  (focus)="picker.open()" placeholder="">
+                                <mat-datepicker-toggle matSuffix [for]="picker" style="font-size: 17px;
+                                margin-top: 19px;"
+                                class="badge badge-warning text-white rounded-0"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                             </mat-form-field>
+                         </div>
+                        </div><!--col-md-6-->
+                       
+                        <div class="col-md-4 pl-2 pr-0">                  
+                             <mat-form-field>
+                                <input matInput [matDatepicker]="pickerIn"  (focus)="pickerIn.open()" placeholder="">
+                                <mat-datepicker-toggle matSuffix [for]="picker" style="font-size: 17px;
+                                margin-top: 19px;"
+                                class="badge badge-warning text-white rounded-0"></mat-datepicker-toggle>
+                                <mat-datepicker #pickerIn></mat-datepicker>
+                             </mat-form-field>
+                        </div><!--col-md-->
+         
+                        <div class="col-md-3" style="font-size: 13.5px;
+                        line-height: 63px;font-weight: 500;" >
+                         <i class="fas fa-moon" style="color:#fecc4f"></i>&nbsp;
+                         <span> 1 Noite(s)</span>
+                        </div>
+                    </div><!--row-->
+                    <div class="row mb-3">
+                        <div class="col-md-4 pr-0 pl-3 rounded-0">
+                            <div class="input-group">
+                             <select class="custom-select rounded-0" id="inputGroupSelect01">
+                                 <option selected>1 Apartamento</option>
+                                 <option value="1">2 Apartamentos</option>
+                                 <option value="2">3 Apartamentos</option>
+                                 <option value="3">4 Apartamentos</option>
+                                 <option value="4">5 Apartamentos</option>
+                                 <option value="5">6 Apartamentos</option>
+                                 <option value="6">7 Apartamentos</option>
+                                 <option value="7">8 Apartamentos</option>
+                                 <option value="8">9 Apartamentos</option>
+                               </select>
+                             <div class="input-group-append">
+                                 <button class="btn btn-warning datepicker checkout rounded-0" type="button">
+                                         <i class="fa fa-hotel"></i>                               
+                                 </button>
+                                
+                             </div>
+                         </div><!--input-group-->
+                        </div>
+                        <div class="col-md-4 pr-0 pl-2">
+                         <div class="input-group">
+                          <select class="custom-select rounded-0" id="inputGroupSelect01">
+                              <option selected>1 Adulto</option>
+                              <option value="1">2 Adultos</option>
+                              <option value="2">3 Adultos</option>
+                              <option value="3">4 Adultos</option>
+                            </select>
+                          <div class="input-group-append">
+                              <button class="btn btn-warning datepicker checkout rounded-0" type="button">
+                                  <i class="fa fa-user"></i>
+                              </button>
+                             
+                          </div>
+                      </div><!--input-group-->
+                     </div>
+                     <div class="col-md-4 pl-2">
+                         <div class="input-group">
+                          <select class="custom-select rounded-0" id="inputGroupSelect01">
+                              <option selected> 0 Crianças</option>
+                              <option value="1">1 Crianças</option>
+                              <option value="2">2 Crianças</option>
+                              <option value="3">3 Crianças</option>
+                            </select>
+                          <div class="input-group-append">
+                              <button class="btn btn-warning datepicker checkout rounded-0" type="button">
+                                 <i class="fas fa-baby-carriage"></i>
+                              </button>
+                             
+                          </div>
+                      </div><!--input-group-->
+                     </div>
+                    </div>
+          </div><!--inputs datepicker-->
+
+            <hr style="background: #eaedf2;">
+
+           <div class="text-right p-3" style="margin-bottom: 16px;margin-top: 47px;">
+            <button class="btn btn-warning datepicker checkout p-2 text-center rounded-0 text-uppercase" type="button" (click)="buttonPesquisarOnClick()"> 
+                Pesquisar <i class="fas fa-angle-right"></i>
+            </button>
+           </div>
+        </div><!--badge badge-content-->
+    </div><!--col1-->    
+     <div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 pl-0 pr-0">
+            <div class="badge badge-light col col-12 content-data">
+                <div class="inlineCalendarContainer">
+                    <sat-calendar [rangeMode]="true" 
+                        (dateRangesChange)="inlineRangeChange($event)"
+                        [selected]="selectedDate">
+                    </sat-calendar>
+                </div>                            
+            </div>
+        </div><!--col2-->
+    </div><!--row-->
+</div><!--container-->
+
+<!--
+/* 
+* [Motor de Reservas]
+* Author: Jhonathan Ribeiro [https://jhonathanribeiro.github.io]
+* Company: BITZ Softwares   [https://www.bitzsoftwares.com.br]
+* Date: 22/08/2019
+* Version: 0.0.1
+*/ 
+-->
+

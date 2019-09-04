@@ -1,0 +1,30 @@
+/* 
+* * Media Queries [Motor de Reservas]
+* Author: Jhonathan Ribeiro [https://jhonathanribeiro.github.io]
+* Company: BITZ Softwares   [https://www.bitzsoftwares.com.br]
+* Date: 22/08/2019
+* Version: 0.0.1
+*/
+@media (max-width:1280px) and (min-width:1280px){.fixed{position:fixed!important;z-index:999;top:5px!important;padding-right:0!important;padding-left:0!important;max-width:255px!important;margin-right:-15px!important;left:884px!important}#card-reserva{display:none!important}#accordion{display:block!important}}@media (max-width:1265px) and (min-width:1250px){#card-reserva{display:block!important}#accordion{display:none!important}}@media (min-width:1280px) and (max-width:1300px){.fixed{left:913px!important}#card-reserva{display:block!important}#accordion{display:none!important}}@media (max-width:1260px) and (min-width:1260px){.fixed{left:903px!important}#card-reserva{display:block!important}#accordion{display:none!important}}@media (max-width:1200px) and (min-width:1199px){.fixed{left:873px!important}#card-reserva{display:block!important}#accordion{display:none!important}}@media (max-width:1199px) and (min-width:1199px){.payment{top:-977px;padding-right:8px}.fixed{left:784px!important}#card-reserva{display:block!important}#accordion{display:none!important}}@media (min-width:1300px) and (max-width:1440px){.payment{top:-977px;padding-right:8px}.fixed{left:955px!important}#card-reserva{display:block!important}#accordion{display:none!important}}@media (min-width:320px) and (max-width:1000px){.payment{margin-top:0;padding-right:8px}.fixed{left:682px!important;margin-top:-2px}.rooms{width:641px!important}#card-reserva{display:block!important}#accordion{display:none!important}}@media (min-width:1001px) and (max-width:1025px){.payment{margin-top:0;padding-right:8px}.fixed{left:682px!important;margin-top:-2px}.rooms{width:641px!important}}@media (min-width:1000px) and (max-width:1040px){.container{max-width:990px}.rooms{width:671px!important}.fixed{left:714px!important;margin-top:-2px}}@media (min-width:1030px) and (max-width:1101px){.container{max-width:990px}.rooms{width:671px!important}.fixed{left:714px!important;margin-top:-2px}}@media (min-width:800px) and (max-width:905px){.payment{margin-top:-213px}.container{max-width:990px}.rooms{width:564px!important}.fixed{left:593px!important;margin-top:-3px}}@media (min-width:800px) and (max-width:892px){.payment{margin-top:-213px}.container{max-width:990px}.container{max-width:990px}.rooms{width:554px!important}.fixed{left:593px!important;margin-top:-3px}}@media (min-width:1101px) and (max-width:1126px){.container{max-width:990px}.rooms{width:671px!important}.fixed{left:714px!important;margin-top:-2px}}@media (min-width:900px) and (max-width:999px){.payment{margin-top:-69px;padding-right:8px}.fixed{left:642px!important;margin-top:-2px}.rooms{width:570px!important}.container{max-width:890px}}@media (min-width:320px) and (max-width:376px){.payment{margin-top:0;padding-right:8px}.fixed{left:682px!important;margin-top:-2px}.rooms{width:641px!important}}
+@media (max-width:891px) and (min-width:825px){
+    .rooms {
+        width: 558px!important;
+    }
+    #card-reserva {
+        width: 221px!important;
+        margin-left: 36px;
+        margin-top: -1px;
+    }
+    .container {
+        width: 790px!important;
+        margin-left: -5px;
+    }
+    .fixed {
+        left: 540px!important;
+    }
+}
+@media (max-width: 1441px) and (min-width: 1300px) {
+  .fixed {
+    left: 955px!important;
+  }
+}

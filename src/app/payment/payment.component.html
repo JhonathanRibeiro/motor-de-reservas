@@ -1,0 +1,278 @@
+
+<div class="row">
+    <button class="btn btn-warning text-uppercase"
+    routerLink="/rooms">
+        <i class="fa fa-undo-alt"></i>
+        Voltar
+    </button>
+</div>
+
+<div class="payment-container">
+    <div class="row">
+        <div class="container" style="padding-right: 15px!important;
+        padding-left: 15px!important;background: #fff;padding:4px 20px!important;
+        margin-bottom: 120px;margin-top: 30px;">
+            <div class="row" style="background: #fff">
+                <div class="col-sm-8" style="padding: 14px;">
+                    <div class="container-fluid">
+                        <form id="contact-form" method="" action="" role="form">
+                            <div class="messages"></div>
+                            <div class="controls">
+                                <h4>INFORMAÇÃO PESSOAL</h4>
+                                <h6>Informe os seus dados para receber sua confirmação de compra.</h6>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="form_name">Nome *</label>
+                                            <input id="form_name" type="text" name="surname" class="form-control"
+                                                placeholder="Please enter your name *" required="required"
+                                                data-error="name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="form_email">Sobrenome *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control"
+                                                placeholder="Please enter your email *" required="required"
+                                                data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="form_phone">Phone</label>
+                                            <input id="form_phone" type="tel" name="phone" class="form-control"
+                                                placeholder="Please enter your phone number">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="form_name">Nome *</label>
+                                            <input id="form_name" type="text" name="surname" class="form-control"
+                                                placeholder="Please enter your name *" required="required"
+                                                data-error="name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="form_email">Sobrenome *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control"
+                                                placeholder="Please enter your email *" required="required"
+                                                data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="form_phone">Phone</label>
+                                            <input id="form_phone" type="tel" name="phone" class="form-control"
+                                                placeholder="Please enter your phone number">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <h4>ACOMODAÇÃO - DUPLO - SOLTEIRO</h4>
+                                <h6>Informe os dados do hóspede responsável por este quarto</h6>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="form_name">Nome *</label>
+                                            <input id="form_name" type="text" name="surname" class="form-control"
+                                                placeholder="Please enter your name *" required="required"
+                                                data-error="name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="form_email">Sobrenome *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control"
+                                                placeholder="Please enter your email *" required="required"
+                                                data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label for="form_phone">Phone</label>
+                                            <input id="form_phone" type="tel" name="phone" class="form-control"
+                                                placeholder="Please enter your phone number">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <h4>FORMA DE PAGAMENTO</h4>
+                                <h6>Informe sua forma de pagamento preferida</h6>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="select">Example select</label>
+                                            <select class="form-control" #classe (change)="0">
+                                              <option>Selecione  uma forma de pagamento</option>
+                                              <option value="cartaoCredito">Cartão de Crédito</option>
+                                              <option>Boleto</option>
+                                              <option>Depósito bancário</option>
+                                            </select>
+                                          </div>  
+                                    </div>
+                                </div>
+
+                                <div [style.display]="classe.value == 'cartaoCredito' ? 'block' : 'none'">
+                                       <app-credit-card></app-credit-card>
+                                 </div>  
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <br>
+                            <h4>SOLICITAÇÕES ESPECIAIS</h4>
+                            <h6>Solicitações não garantidas (Preenchimento opcional)</h6>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="comentario">Comentário</label>
+                                        <textarea id="comentario" name="comentario" class="form-control"
+                                            placeholder="Comentário" rows="3"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="form-check col-md-12">
+                                    <input type="checkbox" class="form-check-input" id="checkPolices">
+                                    <label class="form-check-label" for="checkPolices">
+                                        Aceito os Termos e Condições e Políticas
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="row"><br><br></div>
+                                <div class="col-md-5">
+                                    <input type="submit" class="btn btn-success btn-send float-left" value="RESERVAR">
+                                    <input type="reset" class="btn btn-danger btn-send float-right" value="CANCELAR">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- card previa da reserva -->
+                    <div class="card" id="card-reserva" style="display: block;">
+                        <h5 class="card-header">
+                            <i class="fas fa-shopping-basket"></i>
+                            Minha Reserva
+                        </h5>
+                        <div class="card-body text-center">
+                            <div class="row card-info-reserva">
+                                <div class="media">
+                                    <img class="mr-1 mt-0 pt-0" width="150"
+                                        src="https://q-ec.bstatic.com/images/hotel/max1024x768/120/120695398.jpg"
+                                        alt="Generic placeholder image">
+                                    <div class="media-body p-2">
+                                        <h6 class="text-left size-13">Duplo - Solteiro</h6>
+                                        <h6 class="text-left size-13">Check-in:
+                                            <span class="font-weight-light size-13"> 23/08/2019 </span>
+                                        </h6>
+                                        <h6 class="text-left size-13">Check-out:
+                                            <span class="font-weight-light size-13"> 23/08/2019 </span>
+                                        </h6>
+                                        <h6 class="text-left size-13">Acomodação:
+                                            <span class="font-weight-light size-13"> 101 </span>
+                                        </h6>
+
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-body p-2">
+                                        <h6 class="text-left font-weight-bold size-14">Noite(s):
+                                            <span class="font-weight-light size-14"> 2 </span>
+                                        </h6>
+                                        <h6 class="text-left font-weight-bold size-14">Hóspede(s):
+                                            <span class="font-weight-light size-14"> 1 adulto(s), 0 crianca(s) </span>
+                                        </h6>
+                                        <h6 class="text-left font-weight-bold size-14">Incluso:
+                                            <span class="font-weight-light text-success"
+                                            style="font-size:14px">
+                                                <i class="fa fa-check"></i> Café da Manhã
+                                            </span>
+                                        </h6>
+                                        <h6 class="text-left font-weight-bold size-14">Total diária(s):
+                                            <span class="font-weight-light size-14"> R$ 4.164,00 </span>
+                                        </h6>
+                                        <h6 class="text-left font-weight-bold size-14">Descontos e Promoções:
+                                            <span class="font-weight-light text-danger size-13">Desconto para hospedagem mínima
+                                                de dia(s): - R$ 315,00</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        <span class="badge badge-light p-2 mb-3">
+                            <span class="text-success float-left font-weight-light">Total do Quarto</span>
+                            <span class="text-success float-right"> R$ 2.351,00</span>
+                        </span>
+
+                        <span class="badge badge-light p-3" style="background: #37a73c!important;color:#fff!important;">
+                            <span class="float-left text-uppercase font-weight-light">Total da Reserva</span>
+                            <span class="float-right"> R$ 2.351,00</span>
+                        </span>
+
+                        <div class="formPagamento p-2">
+                            <h6>FORMAS DE PAGAMENTO</h6>
+                            <div class="col-md-12">
+                                <div class="row p-1">
+                                    <ul class="list-unstyled row">
+                                        <li class="col-sm-2 pl-2">
+                                            <img width="40" src="./../../assets/icons/ico_amex.png" alt="">
+                                        </li>
+                                        <li class="col-sm-2 pl-2">
+                                            <img width="40" src="./../../assets/icons/ico_dinners.png" alt="">
+                                        </li>
+                                        <li class="col-sm-2 pl-2">
+                                            <img width="40" src="./../../assets/icons/ico_elo.png" alt="">
+                                        </li>
+                                        <li class="col-sm-2 pl-2">
+                                            <img width="40" src="./../../assets/icons/ico_hipercard.png" alt="">
+                                        </li>
+                                        <li class="col-sm-2 pl-2">
+                                            <img width="40" src="./../../assets/icons/ico_mastercard.png" alt="">
+                                        </li>
+                                        <li class="col-sm-2 pl-2">
+                                            <img width="40" src="./../../assets/icons/ico_visa.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="row" style="margin:10px 22px;">
+                                    <img class="text-center" src="./../../assets/icons/compra-segura.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--col-sm-4-->
+            </div>
+        </div>
+        <!--container-->
+    </div>
+    <!--row-->
+</div>
+<!--payment-container-->
+
+<!--
+/* 
+* [Motor de Reservas]
+* Author: Jhonathan Ribeiro [https://jhonathanribeiro.github.io]
+* Company: BITZ Softwares   [https://www.bitzsoftwares.com.br]
+* Date: 22/08/2019
+* Version: 0.0.1
+*/ 
+-->

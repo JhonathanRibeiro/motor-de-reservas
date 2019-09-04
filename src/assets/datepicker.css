@@ -1,0 +1,44 @@
+.ui-datepicker-inline.ui-datepicker.ui-widget  {
+    display: block;
+    border: 0px;
+    background: transparent;
+    width: 100%;
+}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 0px;
+}
+.ui-datepicker.table.calendar {
+ font-size: 20px!important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, .ui-button, 
+html .ui-button.ui-state-disabled:hover, 
+html .ui-button.ui-state-disabled:active {
+    padding: 18px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 0px;
+    background: transparent;
+}
+table.ui-datepicker-calendar {
+    color: #004ca7;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 400px){
+    .container.app-cont.mt-3 {
+        width: 371px;
+        margin-left: -70px;
+    }
+    .btn.btn-primary.btn-lg {
+        margin-left: 70px;
+    }
+    .mat-form-field{
+        width: 100%;
+    }
+
+}
