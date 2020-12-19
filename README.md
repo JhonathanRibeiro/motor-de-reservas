@@ -1,4 +1,4 @@
-# MotorReservas
+# Motor de reservas
 
 <img src="https://user-images.githubusercontent.com/37172038/102679903-18151e80-4192-11eb-8bc2-0ce9521a6ee5.png">
 
